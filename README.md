@@ -47,6 +47,11 @@ http://localhost:5173
 - 迁移到微信小程序、Taro 或 uni-app
 - 增加分享海报生成
 
+## 产品工程方案
+
+- [完整产品工程设计方案](./docs/PRODUCT_ENGINEERING_SPEC.md)
+- [微信小程序迁移计划](./docs/mini-program-plan.md)
+
 ## License
 
 MIT
