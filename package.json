@@ -1,14 +1,17 @@
 {
-  "name": "diy-milk-tea",
+  "name": "diy-drinks",
   "version": "0.1.0",
   "private": true,
-  "description": "A mobile-first DIY milk tea configurator prototype for web and mini program planning.",
+  "description": "A mobile-first DIY drinks configurator prototype for web and mini program planning.",
   "scripts": {
     "dev": "python3 -m http.server 5173",
     "preview": "python3 -m http.server 5173"
   },
   "keywords": [
+    "drinks",
     "milk-tea",
+    "coffee",
+    "mocktail",
     "mobile-web",
     "mini-program",
     "vibecoding"
