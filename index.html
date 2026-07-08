@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f3ea" />
+    <title>DIY Milk Tea</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Vibe Tea Lab</p>
+          <h1 id="page-title">DIY 一杯你的今日奶茶</h1>
+          <p class="hero-copy">像调配香水一样调奶茶，实时看到价格、热量和口味走向。</p>
+        </div>
+        <div class="cup-stage" aria-label="奶茶预览">
+          <div class="cup">
+            <div class="tea-fill" id="teaFill"></div>
+            <div class="ice-dot ice-one"></div>
+            <div class="ice-dot ice-two"></div>
+            <div class="topping-dot topping-one"></div>
+            <div class="topping-dot topping-two"></div>
+            <div class="topping-dot topping-three"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="summary-panel" aria-label="当前配方摘要">
+        <div>
+          <span class="summary-label">当前配方</span>
+          <strong id="drinkName">茉莉轻乳</strong>
+        </div>
+        <div class="summary-metrics">
+          <span id="drinkPrice">¥18</span>
+          <span id="drinkCalories">210 kcal</span>
+        </div>
+      </section>
+
+      <section class="builder" aria-label="DIY 选项">
+        <div class="option-group">
+          <div class="group-heading">
+            <h2>茶底</h2>
+            <span>决定香气</span>
+          </div>
+          <div class="chip-grid" id="teaOptions"></div>
+        </div>
+
+        <div class="option-group">
+          <div class="group-heading">
+            <h2>奶基底</h2>
+            <span>决定口感</span>
+          </div>
+          <div class="chip-grid" id="milkOptions"></div>
+        </div>
+
+        <div class="option-row">
+          <label for="sweetness">甜度 <span id="sweetnessLabel">三分糖</span></label>
+          <input id="sweetness" type="range" min="0" max="4" value="1" />
+        </div>
+
+        <div class="option-group">
+          <div class="group-heading">
+            <h2>冰量</h2>
+            <span>调整温度</span>
+          </div>
+          <div class="segmented" id="iceOptions"></div>
+        </div>
+
+        <div class="option-group">
+          <div class="group-heading">
+            <h2>小料</h2>
+            <span>最多选 3 个</span>
+          </div>
+          <div class="chip-grid" id="toppingOptions"></div>
+        </div>
+      </section>
+
+      <section class="recipe-card" aria-label="配方卡片">
+        <div>
+          <p class="eyebrow">Recipe Card</p>
+          <h2 id="recipeTitle">茉莉轻乳</h2>
+          <p id="recipeDescription">清爽花香、轻盈奶感、三分糖、少冰。</p>
+        </div>
+        <div class="tag-list" id="tagList"></div>
+        <button class="primary-button" id="saveRecipe" type="button">保存今日配方</button>
+      </section>
+
+      <section class="preset-section" aria-label="推荐配方">
+        <div class="group-heading">
+          <h2>灵感配方</h2>
+          <span>一键试试</span>
+        </div>
+        <div class="preset-list" id="presetList"></div>
+      </section>
+
+      <section class="saved-section" aria-label="已保存配方">
+        <div class="group-heading">
+          <h2>我的配方</h2>
+          <span id="savedCount">0 个</span>
+        </div>
+        <div class="saved-list" id="savedList"></div>
+      </section>
+    </main>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>
